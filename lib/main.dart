@@ -23,6 +23,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<TodoSearch>(
           create: (context) => TodoSearch(),
         ),
+        ChangeNotifierProvider<TodoList>(
+          create: (context) => TodoList(),
+        ),
         ChangeNotifierProxyProvider<TodoList, ActiveTodoCount>(
           create: (context) => ActiveTodoCount(),
           update: (
@@ -50,6 +53,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
+        debugShowCheckedModeBanner: false,
         home: const Todo(),
       ),
     );
