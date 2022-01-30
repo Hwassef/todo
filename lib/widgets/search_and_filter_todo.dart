@@ -25,6 +25,7 @@ class SearchAndFilterTodo extends StatelessWidget {
         ),
         SizedBox(height: 20.0),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             filterButton(context, Filter.All),
             filterButton(context, Filter.Active),

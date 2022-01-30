@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/widgets/create_todo.dart';
 import 'package:todo_app/widgets/search_and_filter_todo.dart';
+import 'package:todo_app/widgets/show_todos.dart';
 import 'package:todo_app/widgets/todo_header.dart';
 
 class Todo extends StatefulWidget {
@@ -27,6 +28,10 @@ class _TodoState extends State<Todo> {
                 CreateTodo(),
                 SizedBox(height: 20.0),
                 SearchAndFilterTodo(),
+                SizedBox(
+                  height: 15.0,
+                ),
+                ShowTodos(),
               ],
             ),
           ),

@@ -8,9 +8,8 @@ class TodoListState extends Equatable {
   TodoListState({required this.todos});
   factory TodoListState.initial() {
     return TodoListState(todos: [
-      Todo(id: '1', desc: 'aaaa11'),
-      Todo(id: '2', desc: 'aaaa22'),
-      Todo(id: '3', desc: 'aaaa33'),
+      Todo(id: '1', desc: 'Close Computer'),
+      Todo(id: '2', desc: 'Clean Your Room'),
     ]);
   }
 
