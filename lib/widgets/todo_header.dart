@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/src/provider.dart';
+import 'package:provider/provider.dart';
 import 'package:todo_app/providers/active_todo_count.dart';
 
 class TodoHeader extends StatelessWidget {
@@ -7,6 +7,7 @@ class TodoHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         const Text(
           'TODO',
