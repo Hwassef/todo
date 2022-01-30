@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/models/todo_model.dart';
+import 'package:todo_app/widgets/text_color.dart';
 
 @override
-Widget FilterButton(BuildContext context, Filter filter) {
+Widget filterButton(BuildContext context, Filter filter) {
   return TextButton(
     onPressed: () {},
     child: Text(
@@ -11,9 +12,9 @@ Widget FilterButton(BuildContext context, Filter filter) {
           : filter == Filter.Active
               ? 'Active'
               : 'Completed',
-      style: const TextStyle(
+      style: TextStyle(
         fontSize: 18.0,
-        color: TextColor(context, filter),
+        color: textColor(context, filter),
       ),
     ),
   );
