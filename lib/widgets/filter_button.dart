@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/models/todo_model.dart';
 
 @override
-Widget build(BuildContext context, Filter filter) {
+Widget FilterButton(BuildContext context, Filter filter) {
   return TextButton(
     onPressed: () {},
     child: Text(
